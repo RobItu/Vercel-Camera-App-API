@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains a serverless API endpoint hosted on Vercel. The primary function of this API is to interact with Chainlink Functions (CLF). When CLF sends a POST request to this endpoint, the API echoes back the received data. This data is then captured by CLF and recorded on the blockchain. This mechanism ensures that data processed through this endpoint is verifiably posted on the blockchain, maintaining transparency and integrity.
+This repository contains a serverless API endpoint hosted on [Vercel](https://vercel-camera-app-api.vercel.app/api/echo). The primary function of this API is to interact with Chainlink Functions (CLF). When CLF sends a POST request to this endpoint, the API echoes back the received data. This data is then captured by CLF and recorded on the blockchain. This mechanism ensures that data processed through this endpoint is verifiably posted on the blockchain, maintaining transparency and integrity.
 
 ## Purpose
 
@@ -23,7 +23,7 @@ The API is deployed on Vercel, which offers seamless scalability and management 
 To use this API, send a POST request to the endpoint with any JSON payload. Below is an example using `curl`:
 
 ```bash
-curl -X POST https://your-vercel-url/api/echo -H "Content-Type: application/json" -d '{"message":"hello"}'
+curl -X POST  https://vercel-camera-app-api.vercel.app/api/echo -H "Content-Type: application/json" -d '{"message":"hello"}'
 ```
 
 ### Expected Response
